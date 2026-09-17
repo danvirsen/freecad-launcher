@@ -2,7 +2,7 @@
 
 A desktop helper (PySide6) for Linux to manage FreeCAD AppImages, test GitHub pull requests, and browse local projects — all from one window.
 
-> ⚠️ **Unofficial project.** Not affiliated with the FreeCAD project. AppImages are downloaded directly from the official [FreeCAD GitHub releases](https://github.com/FreeCAD/FreeCAD).
+> ⚠️ AppImages are downloaded directly from the official [FreeCAD GitHub releases](https://github.com/FreeCAD/FreeCAD).
 > 
 <img width="1278" height="846" alt="DARK" src="https://github.com/user-attachments/assets/a4ad4011-6299-48d5-a29e-7a5f3558bafb" />
 <img width="1280" height="848" alt="LIGHT" src="https://github.com/user-attachments/assets/b9510acb-e0bb-4a46-b25d-d926fc78f740" />
