@@ -71,4 +71,4 @@ To test and build FreeCAD pull requests, you'll also need a full FreeCAD build t
 
 ## License
 
-*(Add your preferred license here — e.g. MIT.)*
+MIT
