@@ -1,6 +1,6 @@
 # FreeCAD Launcher
 
-A desktop helper (PySide6) for Linux to manage FreeCAD AppImages, test GitHub pull requests, and browse local projects — all from one window.
+A desktop helper for Linux to manage FreeCAD AppImages, test GitHub pull requests, and browse local projects, all from one window.
 
 > ⚠️ AppImages are downloaded directly from the official [FreeCAD GitHub releases](https://github.com/FreeCAD/FreeCAD).
 > 
