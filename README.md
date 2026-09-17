@@ -1,4 +1,4 @@
-# FreeCAD Smart Launcher
+# FreeCAD Launcher
 
 A desktop helper (PySide6) for Linux to manage FreeCAD AppImages, test GitHub pull requests, and browse local projects — all from one window.
 
