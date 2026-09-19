@@ -77,7 +77,7 @@ MIT
 Want to help the project? Please consider a donation. Thanks in advance!
 
 <a href="https://ko-fi.com/deltahedra">
-  <img width="984" height="269" alt="kofi_logo" src="https://github.com/user-attachments/assets/183d4e06-f538-4d3b-a6d3-f0c314681f38" />
+  <img width="400"  alt="kofi_logo" src="https://github.com/user-attachments/assets/183d4e06-f538-4d3b-a6d3-f0c314681f38" />
 </a>
 
   
