@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Font downloaded by the launcher at runtime
+assets/Evolventa-Bold.ttf

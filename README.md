@@ -1,6 +1,6 @@
 # FreeCAD Launcher
 
-A desktop helper for Linux to manage FreeCAD AppImages, test GitHub pull requests, and browse local projects, all from one window.
+A desktop helper for Linux and macOS to manage FreeCAD AppImages / app bundles, test GitHub pull requests, and browse local projects, all from one window.
 
 > ⚠️ AppImages are downloaded directly from the official [FreeCAD GitHub releases](https://github.com/FreeCAD/FreeCAD).
 > 
@@ -40,11 +40,26 @@ The only tools that are **not** bundled and must be installed separately on your
 
 On first run, the launcher creates its install folder at `~/Applications/FreeCAD` (configurable from the app), where it stores downloaded AppImages, `launcher_config.json`, and `time_tracker.json`.
 
+## macOS
+
+On macOS the launcher downloads the official `.dmg` for your CPU (arm64 or x86_64), mounts it, and installs `FreeCAD.app` into the install folder under its release name (e.g. `FreeCAD_1.1.0-macOS-arm64-py311.app`). For weekly builds it picks the newest macOS target your OS supports.
+
+Differences from Linux:
+
+- **Desktop entry** becomes **Show in Finder** (drag the app to the Dock to pin it).
+- No FUSE fallback, no `.desktop` handling.
+- Tools are looked up in `PATH` plus `/opt/homebrew/bin`, `/usr/local/bin`, `~/.pixi/bin` and `F3D.app`, since apps started from Finder get a minimal `PATH`.
+- Install optional tools with Homebrew: `brew install git cmake ninja f3d`.
+
+Run from source: `pip install PySide6 && python3 freecad_smart_launcher.py`.
+
+Build a standalone `.app` and `.dmg` (on a Mac): `VERSION=0.0.2 ./build_macos.sh`. The result is ad-hoc signed, not notarized, so first launch needs right-click → Open.
+
 ## Running from source
 
 If you'd rather run the Python script directly (e.g. to contribute):
 
-- **Linux** (uses `.desktop` files and AppImages; not intended for Windows/macOS)
+- **Linux** or **macOS** (not intended for Windows)
 - **Python 3.9+**
 
 ```bash
